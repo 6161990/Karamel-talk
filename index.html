@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/style.css"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Kokoa Clone</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+        </svg>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>110%</span>
+        <i class="fas fa-battery-three-quarters"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+
+    <header class="Welcome-header">
+        <h1 class="Welcome-header__title">Welcome to Kokoa Clone</h1>
+        <p class="Welcome-header__text">If you have a Kakao Account, log in with your email or phone number.</p>
+    </header>
+
+    <form id="login-form" >
+        <div>
+        <input placeholder="Email or Phone number" type="text">
+        </div>
+        <input placeholder="Password" type="password">
+        <input type="submit" value="Log In">
+        <input type="submit" value="Sign Up">
+        <a href="#">Find Kokoa Account or Password</a>
+    </form>
+
+    
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
+<!--(((BEM)))
+    <div id="status-bar">
+      <div class="status-bar__column">에서,
+          이름 설정은 부모와 자식 관계를 보여줄 수 있게 길게 설정
+          나중에 찾기도 쉽고 알아보기도 쉬울 수 있도록
+          - 어떤 클래스가 어떤 책임을 가지는지도 
+          - ㄷ단점 : class가 너무 커짐
+
+          zhe ge ye de
+    <header class="Welcome-header">
+        <h1 class="Welcome-header__title">Welcome to Kokoa Clone</h1>
+        => 어떤 페이지든 header는 많으니까 클래스를 지정해야함
+
+        <a href="#">Find Kokoa Account or Password</a>를
+        form(고유 식별자를 가진 부모) 안으로 넣어서 다른 링크들과 구별
+        링크 하나만을 위한 id나 class를 추가하기엔 글쎼;
+
+-->
+
+
+<!-- ((((css)))) 
+   상태바의 시계가 중심이 아닐 때,
+    justify-content 대신 컨테이너 하나를 말그대로 중심에 놓는 css hack기술
+
+
+-->
+
+<!--
+    .status-bar__column:last-child i {
+  margin: 3px;
+}
+
+=========
+    .status-bar__column .fa-battery-three-quarters {
+  margin: 0px 5px;
+}
+++++ 참고 ~~ + fa-lg 붙이면 어떤 아이콘이든 크기를 바꿔줌.
+    fa-battery-three-quarters +((( fa-lg ))) 
+
+-->
