@@ -1,0 +1,91 @@
+.welcome-header {
+  margin-top: 90px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome-header__title {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.welcome-header__text {
+  width: 60%;
+  opacity: 0.6;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+
+#login-form input {
+  padding: 15px 0px;
+  border: none;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+#login-form input:not([type="submit"]) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  transition: border-color 0.3s ease-in-out;
+}
+#login-form input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+#login-form input:focus {
+  border-color: var(--yellow);
+}
+
+#login-form input[type="submit"] {
+  background-color: var(--yellow);
+  cursor: pointer;
+  padding: 20px 0px;
+  border-radius: 5px;
+}
+
+#login-form a {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  font-size: 13px;
+}
+/*
+  .welcome-header {
+    margin-top: 90px;
+    text-align: center;
+  
+   display:flex를 쓸 수도 있지만
+   h1과p같은 텍스트를 다루는 것이기 때문에 
+   text-align 채택.*/
+
+/*reset.css 파일에 
+   input:focus {
+     outline:none;
+     
+    = input 태그  마우스 클릭하면 생기는 파란 박스 none;
+     */
+
+/* css not :
+   "이 것을 제외한 나머지에 적용하고 싶어요" 
+  #login-form input 에도 똑같이 쓰면 중복적용됨
+  not쪽에만 써야함
+     */
+
+/*cursor: pointer;
+      cursor: not-allowed;
+      cursor: progress;*/
+
+/*
+      id로 구별하는 방법 
+      #login-form input[type="submit"]
+  
+      class로 구별하는 방법
+      .login-form__btn
+  
+      선택은 나의 몫. 후자.
+      */

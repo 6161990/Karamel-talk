@@ -24,18 +24,15 @@
     </div>
 
 
-    <header class="Welcome-header">
-        <h1 class="Welcome-header__title">Welcome to Kokoa Clone</h1>
-        <p class="Welcome-header__text">If you have a Kakao Account, log in with your email or phone number.</p>
+    <header class="welcome-header">
+        <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
+        <p class="welcome-header__text">If you have a Kakao Account, log in with your email or phone number.</p>
     </header>
 
-    <form id="login-form" >
-        <div>
-        <input placeholder="Email or Phone number" type="text">
-        </div>
-        <input placeholder="Password" type="password">
+    <form action="friends.html" method="get" id="login-form" >
+        <input name="username" placeholder="Email or Phone number" type="text">
+        <input name="password" placeholder="Password" type="password">
         <input type="submit" value="Log In">
-        <input type="submit" value="Sign Up">
         <a href="#">Find Kokoa Account or Password</a>
     </form>
 
@@ -64,27 +61,27 @@
         <a href="#">Find Kokoa Account or Password</a>를
         form(고유 식별자를 가진 부모) 안으로 넣어서 다른 링크들과 구별
         링크 하나만을 위한 id나 class를 추가하기엔 글쎼;
-
 -->
 
 
 <!-- ((((css)))) 
    상태바의 시계가 중심이 아닐 때,
-    justify-content 대신 컨테이너 하나를 말그대로 중심에 놓는 css hack기술
+    justify-content 대신 컨테이너 하나를 말그대로 중심에 놓는 css hack기술-->
 
-
--->
-
-<!--
-    .status-bar__column:last-child i {
+<!--  .status-bar__column:last-child i {
   margin: 3px;
 }
-
 =========
-    .status-bar__column .fa-battery-three-quarters {
+      .status-bar__column .fa-battery-three-quarters {
   margin: 0px 5px;
 }
 ++++ 참고 ~~ + fa-lg 붙이면 어떤 아이콘이든 크기를 바꿔줌.
-    fa-battery-three-quarters +((( fa-lg ))) 
+    fa-battery-three-quarters +((( fa-lg ))) -->
 
+<!--<form action="friends.html" method="get"
+  form의 속성 1 action 어떤 페이지로 data를 보낼 건지 지정
+  form의 속성 2method는 두 가지 방식 
+    1 post 백엔드 서버에 정보를 전송하는 방식
+    2 get 보안에 취약. username이랑password를get방식으로 보낼 수 없음
+    url에 포함되기 때문.
 -->
