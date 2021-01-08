@@ -1,0 +1,59 @@
+.nav {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: #f9f9fa;
+  padding: 20px 50px;
+  box-sizing: border-box; /*"패딩 값을 줘도 박스 사이즈를 늘려주지 말아줘"*/
+  border-top: rgba(0, 0, 0, 0.4);
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__link {
+  color: #2e363e;
+  position: relative;
+}
+
+.nav__alram {
+    background-color: tomato;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    color: white;
+    font-weight: 600;
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+
+}
+
+.nav__dot{
+    background-color: tomato;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    position: absolute;
+    left: 28px;
+    bottom: 28px;
+    
+}
+/* 틀림
+  background-color: tomato;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  display: flex;
+((((  justify-items: center;))))))
+  align-items: center;
+  color: white;
+  position: absolute;
+  left: 20px;
+  bottom: 15px;
+  font-weight: 600;
