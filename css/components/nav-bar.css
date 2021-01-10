@@ -5,7 +5,7 @@
   background-color: #f9f9fa;
   padding: 20px 50px;
   box-sizing: border-box; /*"패딩 값을 줘도 박스 사이즈를 늘려주지 말아줘"*/
-  border-top: rgba(0, 0, 0, 0.4);
+  border-top:var(--main-text-color);
 }
 
 .nav__list {

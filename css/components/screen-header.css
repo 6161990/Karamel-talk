@@ -12,6 +12,25 @@
   font-weight: 600;
 }
 
+.screen-header__ions {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.screen-header__ions-cog {
+  position: relative;
+}
+
+.screen-header__dot {
+  position: absolute;
+  background-color: tomato;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  left: 2px;
+  bottom: 18px;
+}
+
 .screen-header__ions span {
   margin-left: 20px;
 }
