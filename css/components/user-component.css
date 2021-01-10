@@ -11,13 +11,14 @@
 .user-component__avarta {
   width: 60px;
   height: 60px;
-  border-radius: 30px;
+  border-radius: 22px;
   margin-right: 10px;
 }
 
 .user-component__title {
   font-size: 20px;
   font-weight: 600;
+  color: #2e363e;
 }
 
 .user-component__subtitle {
@@ -27,8 +28,9 @@
 }
 
 .user-component__avatar--xl {
-  width: 70px;
-  height: 70px;
+  width: 67px;
+  height: 67px;
+  border-radius: 30px;
 }
 
 .user-component__avatar--sm {
@@ -42,5 +44,22 @@
 }
 
 .user-component__column:last-child {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
+.user-component__time {
+  margin-bottom: 10px;
+  display: block;
+}
+
+/*
+user-component__column: last-child 를 건들였으니 자식들은 영향을 받습니다 
+하지만
+friends 의 2와 > 아이콘은 가로로 나란히 정렬해야하고
+chats 의 22:22와 숫자1의 토마토색 동그라미 배경 은 수직으로 정렬이 되야하기에 
+friends 의 html 안에있는 user-component__column중에서 
+last 에 해당되는 애한테 div를 하나를 더 씌워서 적용을 못 받게 하는 겁니당
+(앞에 개념 설명하실때 dispaly :flex 설명하실때 3가지 규칙중
+1번째 자식에 놓지말고 부모에 놓아야 한다를 생각하시면 됩니다~)*/
