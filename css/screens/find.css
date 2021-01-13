@@ -43,6 +43,7 @@
 
 .open-chat__header span {
   opacity: 0.6;
+  font-size: 12px;
 }
 
 .open-post {
