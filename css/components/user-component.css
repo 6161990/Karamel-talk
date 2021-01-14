@@ -8,7 +8,7 @@
   align-items: center;
 }
 
-.user-component__avarta {
+.user-component__avatar {
   width: 60px;
   height: 60px;
   border-radius: 22px;
@@ -25,6 +25,9 @@
   font-size: 17px;
   margin-top: 6px;
   color: var(--main-text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .user-component__avatar--xl {
@@ -41,6 +44,7 @@
 
 .user-component__title--not-bold {
   font-weight: 100;
+  margin-left: 8px;
 }
 
 .user-component__column:last-child {
