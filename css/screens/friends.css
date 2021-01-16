@@ -30,3 +30,32 @@
   justify-content: space-between;
   color: var(--main-text-color);
 }
+
+@keyframes splashscreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+#splash-screen {
+  background-color: var(--yellow);
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 120px;
+  animation: splashscreen 0.3s ease-in-out forwards;
+  animation-delay: 2s;
+}
+
+/*forwards: keyframe의 마지막 속성 값 유지
+ animation-delay 애니메이션이 작동되기까지 기다리게 하는 것
+  visibility:hidden; 실제로 html을 없애는 건 아님. (js로 해야함)
+그러나 아래 레이어에 클릭할 수 있도록 안보이게 해주는 효과,
+즉 마우스에 걸리지 않게 하는 것*/

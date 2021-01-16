@@ -1,0 +1,170 @@
+#chat-screen {
+  background-color: #abc1d1;
+  height: 10000vh;
+}
+#chat-screen .alt-header {
+  top: 10px;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #abc1d1;
+  z-index: 1;
+}
+
+#chat-screen .status-bar {
+  background-color: #abc1d1;
+  z-index: 2;
+}
+.main-chat {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chat__timestamp {
+  color: white;
+  background-color: #949596;
+  padding: 12px 25px;
+  font-size: 14px;
+  border-radius: 25px;
+  margin-bottom: 25px;
+}
+.message-row {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 25px;
+}
+.message-row img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  margin-right: 12px;
+}
+
+.message-row__friend {
+  opacity: 0.8;
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: block;
+}
+.message-row__say {
+  display: flex;
+  align-items: flex-end;
+}
+.message__bubble {
+  background-color: white;
+  padding: 5px 13px;
+  border-radius: 15px;
+  border-top-left-radius: 0px;
+  margin-right: 5px;
+}
+.message__time {
+  opacity: 0.8;
+  font-size: 13px;
+}
+.message-row__own {
+  justify-content: flex-end;
+}
+.message-row__own .message__bubble {
+  background-color: var(--yellow);
+  border-radius: 15px;
+  border-top-right-radius: 0px;
+  margin-right: 0px;
+  margin-left: 5px;
+}
+.message-row__own .message-row__say {
+  flex-direction: row-reverse;
+}
+.reply {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 25px;
+  box-sizing: border-box;
+}
+
+.reply .reply__column:first-child {
+  width: 10%;
+}
+.reply .reply__column:last-child {
+  width: 90%;
+  position: relative;
+}
+.reply i {
+  opacity: 0.5;
+}
+.reply input {
+  padding: 14px;
+  width: 100%;
+  border: var(--main-border);
+  border-radius: 25px;
+  box-sizing: border-box;
+}
+
+.reply__column:last-child > i {
+  position: absolute;
+  right: 50px;
+  top: 7px;
+}
+.reply__column button {
+  color: rgb(36, 36, 36);
+  background-color: var(--yellow);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  right: 3px;
+  top: 3px;
+}
+
+.reply__column button i {
+  opacity: 1;
+}
+.reply__column button:focus,
+.reply__column button:active {
+  outline: none;
+}
+/*
+position fix,absolute를 사용하면
+레이어가 생성되는 것임.
+원래  main 위에 position 레이어가 덮어지는 식.
+그래서 main에 있던 .main-chat은 보이지 않게 됨.
+margin-top를 주는 이유.
+
+
+z-index
+default: 0
+숫자가 작을수록 낮은 layer, 클수록 위의 layer
+fixed, absolute position에 이용 가능
+
+
+z-index: the number of the order of the layer
+- by default, it is 0
+- the greater the z-index is, the more topmost it becomes
+- happens with elements at absolute or fixed positions*/
+
+/*시간과 말풍선 위치를 바꾸는 방법
+1)
+.message-row--own .message__time {
+order: 0;
+margin-right: 5px;
+}
+.message-row--own .message__bubble {
+order: 1;
+margin-right: 0px;
+}
+
+이 방법은 flex children에게 사용할 수 있다.
+그러나 자식의 수가 많으면 어려움.
+
+2)
+.message-row--own .message__info {
+flex-direction: row-reverse;
+}*/
