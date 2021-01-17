@@ -99,6 +99,30 @@
 .open-post__heart-count span {
   margin-left: 5px;
 }
+@keyframes heartbeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(3);
+  }
+
+  100% {
+    color: white;
+  }
+}
+.open-post__heart-count:hover i {
+  will-change: transform;
+  animation: heartbeat 1s linear infinite;
+}
+
 /*.open-post__members .divider 에 점 찍는 이유*/
 /*코드 상에 또 다른 divider가 있을 수 있는데, 이렇게 하면
 open-post__members 안에 있는 divider에만 적용 가능. */
+
+/*New Property
+will-change: to tell the browser that something is going to change --> the browser sort of makes the animation better
+- it can accelerate the animation using the graphic card of the computer
+- doesn't need to be used all the time*/

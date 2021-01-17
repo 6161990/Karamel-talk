@@ -34,3 +34,16 @@
 .screen-header__ions span {
   margin-left: 20px;
 }
+
+@keyframes spincog {
+  from {
+    transform: none;
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+.screen-header__ions .fa-cog:hover {
+  animation: spincog 1s linear infinite;
+}
