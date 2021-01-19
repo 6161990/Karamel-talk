@@ -53,12 +53,7 @@
   width: 67px;
   height: 67px;
   border-radius: 30px;
-<<<<<<< Updated upstream
   animation: avatar 1s ease-in-out infinite;
-=======
-  animation: avatar 1s ease-in infinite forwards;
-  animation-delay: 2s;
->>>>>>> Stashed changes
 }
 
 .user-component__avatar--sm {

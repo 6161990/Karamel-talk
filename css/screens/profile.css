@@ -1,5 +1,4 @@
 #profile-body {
-<<<<<<< Updated upstream
   background-color: #2e363e;
   color: rgb(238, 238, 238);
 }
@@ -54,47 +53,4 @@
 .profile__subtitle {
   font-size: 12px;
   font-weight: 500;
-=======
-  background-color: var(--yellow);
-  color: aliceblue;
-}
-.profile-screen__up {
-  margin: 40px 20px;
-}
-.profile-screen__img {
-  position: relative;
-  width: 460px;
-  height: 650px;
-}
-
-.profile-screen__wrap-icon {
-  position: absolute;
-  top: 40px;
-  right: 40px;
-  color: white;
-}
-
-.profile-screen__profile {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  position: absolute;
-  top: 570px;
-  right: 145px;
-}
-.profile-screen__up span {
-  font-size: 30px;
-  font-weight: 600;
-  position: absolute;
-  top: 740px;
-  left: 175px;
-  color: rgb(53, 53, 53);
-}
-.profile-screen__up h6 {
-  font-size: 12px;
-  position: absolute;
-  top: 780px;
-  left: 195px;
-  color: rgb(53, 53, 53);
->>>>>>> Stashed changes
 }
