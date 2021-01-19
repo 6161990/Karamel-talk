@@ -30,10 +30,21 @@
   align-items: center;
 }
 
+@keyframes avatar {
+  from {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
 .user-component__avatar--xl {
   width: 67px;
   height: 67px;
   border-radius: 30px;
+  animation: avatar 1s ease-in-out infinite;
 }
 
 .user-component__avatar--sm {
