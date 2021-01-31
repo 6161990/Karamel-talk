@@ -1,3 +1,3 @@
-# Karamel Talk Kakao Talk Clone
+# Karamel Talk (Kakao Talk Clone)
 
 
