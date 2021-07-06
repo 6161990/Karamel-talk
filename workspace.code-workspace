@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": ".git",
+			"path": ".git"
+		},
+		{
+			"name": "images",
+			"path": "images"
+		},
+		{
+			"name": "css",
+			"path": "css"
+		}
+	]
+}
